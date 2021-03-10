@@ -1,15 +1,153 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	text-align: center;
+	font-family: ＭＳ Ｐゴシック;
+}
+.main-header {
+	padding-bottom: 15%;
+	width: 100%;
+	height: 120px;
+	background-size: cover;
+	background-image: url("/assets/header.jpg");
+	background-attachment: fixed;
+}
+
+ul {
+	margin: 0;      /* 余白を削除 */
+	padding: 0;     /* 余白を削除 */
+}
+li {
+	list-style: none;   /* リスト先頭の黒丸を削除 */
+}
+header {
+	background-color: #666;
+}
+header ul {
+}
+header ul a {
+	color: #fff;
+	text-decoration: none;   /* デフォルトで文字に下線が入ってしまうので、text-decoration: noneではずします */
+	display: block;          /*  このコンテンツが幅や高さを持てるよう */
+	margin: 12px 25px;
+	font-weight: bold;
+
+}
+header ul p {
+	color: #fff;
+	text-decoration: none;   /* デフォルトで文字に下線が入ってしまうので、text-decoration: noneではずします */
+	display: block;          /*  このコンテンツが幅や高さを持てるよう */
+	margin: 12px 25px;
+	font-weight: bold;
+}
+
+header ul a:hover {
+	color: #CCC;
+}
+
+header li {
+
+}
+.left {
+	float: left;
+}
+.right_menu {
+	float: right;
+}
+.right {
+	float: left;
+}
+header ul:after {
+	content: "";
+	display: block;      /*  このコンテンツが幅や高さを持てるよう */
+	clear: both;
+}
+/* ここまでがheader部分の実装 */
+
+.main-header img {
+	position: relative;
+	width: 20%;
+	margin-top: 80px;/* main画像（白い「Achieve」の文字の画像）部分の実装 */
+}
+.twitter_main {
+	margin: 0 auto;
+	height:400px;
+	width: 90%;
+	padding-top:30px;
+	text-align: left;
+/* About Achieve部分の実装 */
+}
+
+.box1{
+	margin: 0 auto;
+	width: 800px;
+	text-align: left;
+	border: 0px ;
+}
+.box2{
+		margin: 0 auto;
+		width: 800px;
+		text-align: left;
+
+		border-bottom : 2px dotted #B1B1B1;
+}
+
+.box1th1{
+	width: 50%;
+}
+
+.box1th2{
+	width: 50%;
+	text-align:right;
+	text-decoration:none;
+}
+
+.toptd{
+	width: 76%;
+}
+.toptd2{
+	width: 8%;
+	font-size: 12px;
+}
+/* ここから */
+.function {
+	background-color: #CCC;
+	height:350px;
+	padding-top:20px;
+
+}
+.function-images {
+	margin: 0 auto;
+	display: table;
+}
+.function-image {
+	float:left;
+	padding:30px 60px;
+	margin: 0 15px;
+	position: relative;
+	/* border: 2px solid #F00; */
+}
+.function-image img{
+	width:120px;
+	height:120px;
+}
+/* ここまでがfunction部分の実装 */
+
+.tweet_content{
+	float:none;
+	display:inline;
+	padding:5px 15px 10px 18px;
+	margin-right:10px;
+	vertical-align:middle;
+}
+
+footer {
+	background-color: #0F3F62;
+	height:100px;
+	padding-top:15px;
+	color:#FFF;
+	font-size:14px;
+/* footer部分の実装 */
+}

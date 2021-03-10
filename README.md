@@ -1,24 +1,31 @@
-# README
+# TwitterCloneアプリケーション課題
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby on Railsを使ったアプリケーションであること
 
-Things you may want to cover:
+* HTML、CSSを使用して、最低限のフロント部分（header、footer、topページ）を作成すること
 
-* Ruby version
+* つぶやきの投稿、投稿確認、編集、一覧表示、削除機能があること
 
-* System dependencies
+* 確認画面から投稿画面に戻った時、打ち込んだ内容が保持されるようにすること
 
-* Configuration
+* 1文字以上140文字以下しかつぶやけないようにすること
 
-* Database creation
+* 140文字より多い文字数、または内容が空で登録しようとした場合、エラーメッセージが出るようにすること
 
-* Database initialization
+* つぶやきを登録するテーブル名にはpostsを使用すること
 
-* How to run the test suite
+* postsテーブルは、本文を表すcontentカラムのみを有すること（id、timestampはデフォルトで生成されるのでそのままで構いません。）
 
-* Services (job queues, cache servers, search engines, etc.)
+* Githubにソースコードを送信し、そのリポジトリのURLを提出すること
 
-* Deployment instructions
+* エラーが出ないようにすること
 
-* ...
+* コミットメッセージが、一目見てそのコミットの意味がわかるものであること
+
+* 一つの機能を作成したら、一つのコミットをするようにすること
+
+* あなたの地域のタイムゾーンに設定すること
+
+* 下記に記述してあるコーディング規約に沿った実装を行うこと
+
+* bootstrap、jquery-rails、デバック関係以外のgemを使用していないこと

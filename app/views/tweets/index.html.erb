@@ -1,2 +1,49 @@
-<h1>Tweets#index</h1>
-<p>Find me in app/views/tweets/index.html.erb</p>
+<header>
+  <ul>
+    <li class="left"><p>TwitterClone</p></li>
+    <div class="right_menu">
+      <li class="right"><a href="#">サインアップ</a></li>
+      <li class="right"><a href="#">ログイン</a></li>
+    </div>
+  </ul>
+</header>
+<section class="main-header"> <%= image_tag'achieve.png'%> </section>
+<section class="twitter_main">
+  <table class="box1">
+    <tr>
+      <th class="box1th1"><h1>ツイート</h1></th>
+      <th class="box1th2"><%= link_to '新規投稿', new_tweet_path %></th>
+    </tr>
+  </table>
+  <p><%= notice %></p>
+  <% @posts.each do |message| %>
+  <table class="box2">
+    <tr>
+      <th class="topid">No.<%= message.id %></th>
+    </tr>
+    <tr>
+      <td class="toptd"><%= message.content %></td>
+      <td class="toptd2"><%= link_to '詳細', tweet_path(message.id) %></td>
+      <td class="toptd2"><%= link_to '編集', edit_tweet_path(message.id) %></td>
+      <td class="toptd2"><%= link_to '削除', tweet_path(message.id), method: :delete, data: { confirm: '本当に削除していいですか？'} %></td>
+    </tr>
+  <% end %>
+  </table>
+</section>
+<section class="function">
+  <h1>Function</h1>
+  <div class="function-images">
+    <div class="function-image"> <img src="/assets/key.png">
+      <p>ログイン機能</p>
+    </div>
+    <div class="function-image"> <img src="/assets/mails.png">
+      <p>メール送信機能</p>
+    </div>
+    <div class="function-image"> <img src="/assets/girls.png">
+      <p>友達つながり機能</p>
+    </div>
+    <div class="function-image"> <img src="/assets/comment.png">
+      <p>コメント投稿機能</p>
+    </div>
+  </div>
+</section>
