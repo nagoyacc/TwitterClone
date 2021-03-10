@@ -73,13 +73,15 @@ header ul:after {
 }
 .twitter_main {
 	margin: 0 auto;
-	height:400px;
 	width: 90%;
 	padding-top:30px;
 	text-align: left;
-/* About Achieve部分の実装 */
 }
-
+.scoll{
+	overflow-y:scroll;
+	width: 820px;
+	height:400px;
+}
 .box1{
 	margin: 0 auto;
 	width: 800px;
@@ -90,8 +92,8 @@ header ul:after {
 		margin: 0 auto;
 		width: 800px;
 		text-align: left;
-
 		border-bottom : 2px dotted #B1B1B1;
+		line-height: 1.5;
 }
 
 .box1th1{

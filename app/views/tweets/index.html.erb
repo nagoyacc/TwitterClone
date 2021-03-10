@@ -11,11 +11,15 @@
 <section class="twitter_main">
   <table class="box1">
     <tr>
+      <th><%= notice %></th>
+    </tr>
+    <tr>
       <th class="box1th1"><h1>ツイート</h1></th>
       <th class="box1th2"><%= link_to '新規投稿', new_tweet_path %></th>
     </tr>
   </table>
-  <p><%= notice %></p>
+</section>
+<section class="twitter_main scoll">
   <% @posts.each do |message| %>
   <table class="box2">
     <tr>
