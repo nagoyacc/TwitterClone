@@ -147,8 +147,8 @@ header ul:after {
 
 footer {
 	background-color: #0F3F62;
-	height:100px;
-	padding-top:15px;
+	height:50px;
+	padding-top:10px;
 	color:#FFF;
 	font-size:14px;
 /* footer部分の実装 */
