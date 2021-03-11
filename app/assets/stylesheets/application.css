@@ -101,25 +101,6 @@ header ul:after {
 	width: 8%;
 	font-size: 12px;
 }
-.function {
-	background-color: #CCC;
-	height:350px;
-	padding-top:20px;
-}
-.function-images {
-	margin: 0 auto;
-	display: table;
-}
-.function-image {
-	float:left;
-	padding:30px 60px;
-	margin: 0 15px;
-	position: relative;
-}
-.function-image img{
-	width:120px;
-	height:120px;
-}
 .tweet_content{
 	float:none;
 	display:inline;
