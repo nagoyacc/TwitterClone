@@ -1,7 +1,18 @@
-<h3>以下の内容で、送信する。</h3>
+<header>
+  <ul>
+    <li class="left"><p>TwitterClone</p></li>
+    <div class="right_menu">
+      <li class="right"><a href="#">サインアップ</a></li>
+      <li class="right"><a href="#">ログイン</a></li>
+    </div>
+  </ul>
+</header>
+<section class="twitter_show">
+<h3>送信内容の確認</h3>
 <%= form_with(model: @post, url: tweets_path, local: true) do |form| %>
   <%= form.hidden_field :content %>
-  <p>本文:<%= @post.content %></p>
-  <%= form.submit  "登録する" %>
+  <p>「<%= @post.content %>」</p>
+  <%= form.submit  "送信" %>
 <% end %>
 <%= link_to '戻る', :back %>
+</section>

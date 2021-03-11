@@ -18,12 +18,12 @@
       </ul>
     </div>
   <% end %>
-
+  <section class="twitter_show">
   <div class="tweet_content">
-    <%= form.label :ツイート内容： %>
-    <%= form.text_field :content %>
-    <%= form.submit :投　稿 %>
+    <%= form.label :内容： %>
+    <%= form.text_field :content, size: "60"%>
+    <%= form.submit :送信 %>
   </div>
-
+  <%= link_to 'もどる', tweets_path %>
+  </section>
 <% end %>
-<%= link_to 'もどる', tweets_path %>

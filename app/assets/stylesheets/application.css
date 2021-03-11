@@ -14,13 +14,12 @@ body {
 	background-image: url("/assets/header.jpg");
 	background-attachment: fixed;
 }
-
 ul {
-	margin: 0;      /* 余白を削除 */
-	padding: 0;     /* 余白を削除 */
+	margin: 0;
+	padding: 0;
 }
 li {
-	list-style: none;   /* リスト先頭の黒丸を削除 */
+	list-style: none;
 }
 header {
 	background-color: #666;
@@ -29,26 +28,20 @@ header ul {
 }
 header ul a {
 	color: #fff;
-	text-decoration: none;   /* デフォルトで文字に下線が入ってしまうので、text-decoration: noneではずします */
-	display: block;          /*  このコンテンツが幅や高さを持てるよう */
+	text-decoration: none;
+	display: block;
 	margin: 12px 25px;
 	font-weight: bold;
-
 }
 header ul p {
 	color: #fff;
-	text-decoration: none;   /* デフォルトで文字に下線が入ってしまうので、text-decoration: noneではずします */
-	display: block;          /*  このコンテンツが幅や高さを持てるよう */
+	text-decoration: none;
+	display: block;
 	margin: 12px 25px;
 	font-weight: bold;
 }
-
 header ul a:hover {
 	color: #CCC;
-}
-
-header li {
-
 }
 .left {
 	float: left;
@@ -61,15 +54,13 @@ header li {
 }
 header ul:after {
 	content: "";
-	display: block;      /*  このコンテンツが幅や高さを持てるよう */
+	display: block;
 	clear: both;
 }
-/* ここまでがheader部分の実装 */
-
 .main-header img {
 	position: relative;
 	width: 20%;
-	margin-top: 80px;/* main画像（白い「Achieve」の文字の画像）部分の実装 */
+	margin-top: 80px;
 }
 .twitter_main {
 	margin: 0 auto;
@@ -95,17 +86,14 @@ header ul:after {
 		border-bottom : 2px dotted #B1B1B1;
 		line-height: 1.5;
 }
-
 .box1th1{
 	width: 50%;
 }
-
 .box1th2{
 	width: 50%;
 	text-align:right;
 	text-decoration:none;
 }
-
 .toptd{
 	width: 76%;
 }
@@ -113,12 +101,10 @@ header ul:after {
 	width: 8%;
 	font-size: 12px;
 }
-/* ここから */
 .function {
 	background-color: #CCC;
 	height:350px;
 	padding-top:20px;
-
 }
 .function-images {
 	margin: 0 auto;
@@ -129,14 +115,11 @@ header ul:after {
 	padding:30px 60px;
 	margin: 0 15px;
 	position: relative;
-	/* border: 2px solid #F00; */
 }
 .function-image img{
 	width:120px;
 	height:120px;
 }
-/* ここまでがfunction部分の実装 */
-
 .tweet_content{
 	float:none;
 	display:inline;
@@ -144,12 +127,14 @@ header ul:after {
 	margin-right:10px;
 	vertical-align:middle;
 }
-
+.twitter_show{
+	height: 650px;
+	padding-top: 100px;
+}
 footer {
 	background-color: #0F3F62;
-	height:50px;
-	padding-top:10px;
+	height:40px;
+	padding-top:3px;
 	color:#FFF;
 	font-size:14px;
-/* footer部分の実装 */
 }
