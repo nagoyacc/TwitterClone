@@ -1,0 +1,15 @@
+<header>
+  <ul>
+    <li class="left"><p>TwitterClone</p></li>
+    <div class="right_menu">
+      <li class="right"><a href="#">サインアップ</a></li>
+      <li class="right"><a href="#">ログイン</a></li>
+    </div>
+  </ul>
+</header>
+<section class="twitter_show">
+  <h1>詳細</h1>
+  <p><%= @post.content %></p>
+  <%= link_to '投稿', new_post_path %>
+  <%= link_to 'もどる', posts_path %>
+</section>
